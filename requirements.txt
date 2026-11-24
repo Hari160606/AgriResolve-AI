@@ -1,0 +1,31 @@
+# AgriResolve AI - Python dependencies (fixed stack only).
+# Install with:  py -3.13 -m venv .venv  then  .venv\Scripts\pip install -r requirements.txt
+# Versions pinned to what was verified on the development machine (Windows, Python 3.13).
+# Installed in groups; the comment marks the phase that first needs the package.
+
+# ---- core / app (phase 1, 11) ----
+streamlit==1.55.0
+pandas==2.3.3
+numpy==2.4.3
+plotly
+python-dotenv
+pyyaml
+
+# ---- database (phase 6) ----
+SQLAlchemy==2.0.49
+psycopg2-binary==2.9.12
+
+# ---- data acquisition + preprocessing (phase 4, 5, 7) ----
+requests
+scikit-learn
+# earthengine-api        # phase 4 - Google Earth Engine ingestion (not yet configured)
+# geopandas             # phase 2/4 - only needed for real KGIS boundary files
+
+# ---- tests (phase 5 onwards) ----
+pytest
+
+# ---- AI field assistant (phase 13) ----
+# Not installed by default: these pull large model downloads. See docs/rag_evaluation.md.
+# sentence-transformers
+# faiss-cpu
+# PyMuPDF

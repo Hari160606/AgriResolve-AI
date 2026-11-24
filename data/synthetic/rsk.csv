@@ -1,0 +1,2 @@
+rsk_id,rsk_name,district,taluk,hobli,latitude,longitude,mapping_status,is_synthetic,data_type
+RSK-SIM-01,RSK Hunsur (simulated jurisdiction),Mysuru,Hunsur,Hunsur,12.3085,76.2927,simulated,True,Synthetic

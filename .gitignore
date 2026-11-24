@@ -1,0 +1,43 @@
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+secrets/
+.streamlit/secrets.toml
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- Tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+logs/
+
+# ---- Data: raw / cleaned / derived stay local, regenerate via scripts ----
+data/raw/*
+data/cleaned/*
+data/derived/*
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/derived/.gitkeep
+
+# ---- RAG artefacts & model files ----
+guidelines_pdfs/*.pdf
+!guidelines_pdfs/.gitkeep
+*.faiss
+*.index
+src/rag_assistant/index/
+models/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

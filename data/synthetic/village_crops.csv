@@ -1,0 +1,17 @@
+village_id,crop_id,area_ha,is_synthetic,data_type
+V01,C01,197.8,True,Synthetic
+V01,C03,116.68,True,Synthetic
+V01,C05,35.72,True,Synthetic
+V02,C02,137.96,True,Synthetic
+V02,C04,80.95,True,Synthetic
+V02,C03,231.59,True,Synthetic
+V03,C02,216.02,True,Synthetic
+V03,C06,181.78,True,Synthetic
+V04,C01,54.18,True,Synthetic
+V04,C03,64.52,True,Synthetic
+V04,C05,183.9,True,Synthetic
+V05,C01,157.58,True,Synthetic
+V05,C05,95.72,True,Synthetic
+V06,C02,138.61,True,Synthetic
+V06,C03,80.59,True,Synthetic
+V06,C01,110.59,True,Synthetic

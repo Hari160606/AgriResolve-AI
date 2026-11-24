@@ -1,0 +1,63 @@
+# Routine-monitoring + reported-issue configuration.
+# Every weight and threshold here is deliberately explicit: the priority engine must
+# stay explainable, so nothing is hidden inside code.
+
+routine:
+  # factor weights must sum to 1.0
+  weights:
+    rainfall_deficit: 0.28
+    ndvi_decline: 0.22
+    vegetation_anomaly: 0.08
+    weather_risk: 0.10
+    inspection_recency: 0.18
+    data_reliability_gap: 0.14
+
+  thresholds:
+    # rainfall deficit (fraction below the multi-year baseline) that counts as "full" risk
+    rainfall_deficit_full: 0.50
+    # NDVI drop versus the same month last year that counts as "full" risk
+    ndvi_decline_full: 0.15
+    # |z-score| of NDVI anomaly that counts as "full" risk
+    ndvi_anomaly_full: 2.0
+    # days since the last inspection that counts as "neglected"
+    inspection_recency_days: 180
+    # low-reliability cutoff (completeness score 0-1)
+    reliability_low: 0.60
+    # heat-dry week definition
+    heat_temp_c: 35.0
+    # a village is flagged when the routine risk score reaches this value
+    flag_risk_score: 60.0
+
+reported:
+  weights:
+    urgency: 0.30
+    category: 0.20
+    affected_area: 0.18
+    repeat_complaints: 0.12
+    waiting_days: 0.10
+    report_recency: 0.10
+
+  urgency_scores:
+    high: 1.0
+    medium: 0.6
+    low: 0.3
+
+  category_scores:
+    pest_attack: 0.95
+    disease_outbreak: 0.95
+    flood_damage: 0.90
+    drought_stress: 0.85
+    irrigation_issue: 0.65
+    nutrient_deficiency: 0.60
+
+  thresholds:
+    # affected area as a fraction of the village's cultivated area = "full" severity
+    affected_area_full: 0.30
+    # days a complaint can wait before it is considered overdue
+    waiting_days_full: 14
+    # complaint window used for aggregation
+    window_days: 30
+    # severity bands (severity score 0-100)
+    critical: 75.0
+    high: 55.0
+    medium: 35.0

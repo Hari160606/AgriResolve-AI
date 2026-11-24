@@ -1,0 +1,7 @@
+crop_id,crop_name,water_requirement,is_synthetic,data_type
+C01,Ragi,low,True,Synthetic
+C02,Paddy,high,True,Synthetic
+C03,Maize,medium,True,Synthetic
+C04,Sugarcane,high,True,Synthetic
+C05,Groundnut,low,True,Synthetic
+C06,Cotton,medium,True,Synthetic

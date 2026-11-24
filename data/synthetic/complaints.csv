@@ -1,0 +1,17 @@
+complaint_id,village_id,crop_id,category,affected_area_ha,urgency,reported_date,description,reporter_role,status,is_synthetic,data_type
+CMP0001,V01,C01,drought_stress,18.0,high,2026-11-21,"Ragi crop wilting, soil dry since the last spell; farmers report poor tillering.",AA,registered,True,Synthetic
+CMP0002,V01,C03,drought_stress,12.5,high,2026-11-15,"Maize leaves curling in the afternoon, no borewell water left.",AA,registered,True,Synthetic
+CMP0003,V01,C05,drought_stress,6.0,medium,2026-11-08,"Groundnut sown late, germination patchy because of dry spell.",AA,registered,True,Synthetic
+CMP0004,V01,C01,nutrient_deficiency,4.0,medium,2026-11-03,Yellowing of lower leaves in ragi; farmer suspects nitrogen deficiency.,AA,registered,True,Synthetic
+CMP0005,V02,C02,flood_damage,22.0,high,2026-11-22,Standing water in paddy fields for three days after heavy rain; seedlings submerged.,AA,registered,True,Synthetic
+CMP0006,V02,C04,flood_damage,9.0,high,2026-11-18,"Sugarcane field waterlogged, root rot starting in the low-lying patch.",AA,registered,True,Synthetic
+CMP0007,V02,C02,disease_outbreak,14.0,medium,2026-11-12,Blast-like lesions on paddy leaves after continuous wet weather.,AA,registered,True,Synthetic
+CMP0008,V03,C02,pest_attack,16.0,high,2026-11-23,Brown planthopper hoppers seen in large numbers at the base of paddy plants.,AA,registered,True,Synthetic
+CMP0009,V03,C02,pest_attack,11.0,high,2026-11-20,Paddy crop showing hopper burn patches; two farmers affected in the same block.,AA,registered,True,Synthetic
+CMP0010,V03,C06,pest_attack,7.5,medium,2026-11-16,Cotton pink bollworm larvae found in green bolls.,AA,registered,True,Synthetic
+CMP0011,V03,C02,pest_attack,5.0,medium,2026-11-09,"Stem borer damage, dead hearts visible in about a tenth of the field.",AA,registered,True,Synthetic
+CMP0012,V04,C03,irrigation_issue,10.0,medium,2026-11-17,Canal release delayed; maize needs one protective irrigation.,AA,registered,True,Synthetic
+CMP0013,V04,C01,irrigation_issue,3.5,low,2026-11-06,"Community tank level low, only one irrigation possible this month.",AA,registered,True,Synthetic
+CMP0014,V05,C01,nutrient_deficiency,2.5,low,2026-11-13,Farmer reports pale ragi crop; no affected-area measurement given.,AA,registered,True,Synthetic
+CMP0015,V06,C02,pest_attack,6.0,medium,2026-11-19,Leaf folder damage observed along the field bund.,AA,registered,True,Synthetic
+CMP0016,V06,C01,nutrient_deficiency,,low,2026-11-04,Ragi growth uneven; farmer did not specify the area affected.,AA,registered,True,Synthetic

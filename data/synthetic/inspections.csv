@@ -1,0 +1,13 @@
+inspection_id,village_id,staff_id,inspection_date,purpose,findings,outcome,is_synthetic,data_type
+INS0001,V01,S03,2026-04-18,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0002,V01,S04,2026-01-28,complaint_followup,Routine crop condition check completed.,advisory_issued,True,Synthetic
+INS0003,V02,S05,2026-10-30,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0004,V02,S06,2026-08-21,complaint_followup,Routine crop condition check completed.,advisory_issued,True,Synthetic
+INS0005,V02,S01,2026-05-28,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0006,V03,S02,2026-10-25,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0007,V03,S03,2026-06-27,complaint_followup,Routine crop condition check completed.,advisory_issued,True,Synthetic
+INS0008,V04,S04,2026-09-10,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0009,V04,S05,2026-04-28,complaint_followup,Routine crop condition check completed.,advisory_issued,True,Synthetic
+INS0010,V05,S06,2026-07-07,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0011,V06,S01,2026-09-25,routine,Routine crop condition check completed.,no_action,True,Synthetic
+INS0012,V06,S02,2026-05-18,complaint_followup,Routine crop condition check completed.,advisory_issued,True,Synthetic

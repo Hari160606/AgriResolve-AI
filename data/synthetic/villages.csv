@@ -1,0 +1,7 @@
+village_id,village_name,lgd_code,rsk_id,district,taluk,hobli,latitude,longitude,cultivated_area_ha,road_distance_km,source_status,is_synthetic,data_type
+V01,Keralapura,SIM-LGD-0001,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.3521,76.261,412.0,9.5,simulated,True,Synthetic
+V02,Hanagodu,SIM-LGD-0002,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.2731,76.3205,530.0,14.0,simulated,True,Synthetic
+V03,Bilikere,SIM-LGD-0003,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.3398,76.3452,468.0,7.0,simulated,True,Synthetic
+V04,Doddabyranakuppe,SIM-LGD-0004,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.289,76.2408,356.0,22.5,simulated,True,Synthetic
+V05,Gavadagere,SIM-LGD-0005,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.314,76.2075,298.0,31.0,simulated,True,Synthetic
+V06,Uyyamballi,SIM-LGD-0006,RSK-SIM-01,Mysuru,Hunsur,Hunsur,12.3655,76.3021,388.0,17.5,simulated,True,Synthetic

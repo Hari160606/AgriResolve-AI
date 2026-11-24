@@ -1,0 +1,34 @@
+# Combined priority engine configuration (workflow step 5).
+# Weights must sum to 1.0. Change them here (not in code) and re-run to see the
+# effect; sensitivity.py reports how ranks move when a weight is perturbed.
+
+weights:
+  agricultural_risk: 0.28
+  issue_urgency: 0.36
+  waiting_time: 0.10
+  inspection_gap: 0.08
+  accessibility: 0.05
+  data_reliability: 0.13
+
+thresholds:
+  # days a flagged village can stay uninspected before it is "overdue"
+  waiting_days_full: 21
+  inspection_gap_days_full: 180
+  # road distance that counts as "fully inaccessible"
+  distance_km_full: 40.0
+
+# Double-counting guard: a routine signal and a complaint category that describe the
+# same underlying problem must be counted once. When a village has both, the engine
+# takes the stronger of the two scores instead of adding them, and records the rule
+# that fired in priority_score_factors.dedupe_rule.
+dedupe_map:
+  rainfall_deficit: [drought_stress, irrigation_issue]
+  ndvi_decline: [drought_stress, nutrient_deficiency]
+  vegetation_anomaly: [pest_attack, disease_outbreak]
+  weather_risk: [flood_damage, drought_stress]
+
+# Severity bands for the final 0-100 priority score.
+bands:
+  inspect_first: 55.0
+  high: 42.0
+  medium: 32.0

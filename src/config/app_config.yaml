@@ -1,0 +1,24 @@
+# Application configuration (non-secret). Secrets belong in .env only.
+
+# All monitoring windows are computed relative to this date so that the demo is
+# reproducible. Synthetic data was generated to line up with this anchor.
+reference_date: "2026-11-24"
+
+# The agricultural season the prototype reasons about.
+season:
+  label: "Kharif 2026"
+  start_month: "2026-06"
+  end_month: "2026-10"
+
+# Synthetic-data baseline: first year of the generated rainfall history.
+baseline_start_year: 2019
+
+paths:
+  raw: "data/raw"
+  cleaned: "data/cleaned"
+  derived: "data/derived"
+  synthetic: "data/synthetic"
+
+ui:
+  # Shown in the app so a viewer can never mistake the demo data for government data.
+  synthetic_banner: "Synthetic data + simulated RSK-village mapping. Not government data."
